@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <div class="row top-20">
+            <div>
+                <button style="margin-left: 7px" class="btn btn-primary" id="get-flights">Get Flights</button>
+            </div>
+        </div>
+        <div id="flightui" style="display: block;">
+            <div class="row top-20">
+                <div>
+                    <label>Select Flight</label>
+                    <select id="flights-selector">
+                    </select>
+                </div>
+            </div>
+            <div class="row top-20">
+                <div>
+                    <label> Amount (Max = 1 ether)</label>
+                </div>
+                <div>
+                    <input style="margin-left: 7px" id="insuranceAmt" type="number">
+                    <button style="margin-left: 7px" class="btn btn-primary" id="buyInsurance">Buy Insurance</button>
+                </div>
+                <div>
+                    <button style="margin-left: 7px" class="btn btn-primary" id="collectSurety">Collect Surety</button>
+                </div>
+            </div>
+            <div class="row top-20">
+                <div>
+                    <button style="margin-left: 7px" class="btn btn-primary" id="submit-oracle">Get Flight Status</button>
+                </div>
+            </div>
+            <div class="row top-20">
+                <div style="display: none;">
+                    <label class="form">Flight Status: </label> 
+                    <input type="text" id="flight-number" disabled>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

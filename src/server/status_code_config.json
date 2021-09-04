@@ -1,0 +1,6 @@
+{
+	"localhost": {
+		"desiredCode": 20,
+                "probCodeError": 0.25
+	}
+}
